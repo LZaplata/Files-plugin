@@ -1,0 +1,24 @@
+fields:
+    file:
+        label: 'lzaplata.files::lang.file.field.file.label'
+        mode: file
+        fileTypes: 'pdf,txt,doc,xls,ppt'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        maxFiles: '1'
+        span: left
+        required: 1
+        type: fileupload
+    name:
+        label: 'lzaplata.files::lang.file.field.name.label'
+        span: right
+        required: 1
+        type: text
+    categories:
+        label: 'lzaplata.files::lang.file.field.categories.label'
+        nameFrom: name
+        descriptionFrom: description
+        span: left
+        type: relation

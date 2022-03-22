@@ -1,0 +1,16 @@
+columns:
+    name:
+        label: 'lzaplata.files::lang.category.column.name.label'
+        type: text
+        searchable: true
+        sortable: true
+    slug:
+        label: 'lzaplata.files::lang.category.column.slug.label'
+        type: text
+    files_count:
+        label: 'lzaplata.files::lang.category.column.files_count.label'
+        relation: files_count
+        relationCount: true
+    created_at:
+        label: 'lzaplata.files::lang.category.column.created_at.label'
+        type: datetime

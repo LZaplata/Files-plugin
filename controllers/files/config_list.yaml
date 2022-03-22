@@ -1,0 +1,16 @@
+title: 'lzaplata.files::lang.file.name'
+modelClass: LZaplata\Files\Models\File
+list: $/lzaplata/files/models/file/columns.yaml
+recordUrl: 'lzaplata/files/files/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: 1
+showCheckboxes: true
+defaultSort:
+    column: created_at
+    direction: desc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+filter: config_filter.yaml

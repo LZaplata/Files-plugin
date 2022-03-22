@@ -1,0 +1,23 @@
+columns:
+    file_name:
+        label: 'lzaplata.files::lang.file.column.file.label'
+        type: text
+        searchable: true
+        sortable: false
+        relation: file
+        select: file_name
+    name:
+        label: 'lzaplata.files::lang.file.column.name.label'
+        type: text
+        searchable: true
+        sortable: true
+    categories:
+        label: 'lzaplata.files::lang.file.column.categories.label'
+        searchable: true
+        sortable: true
+        relation: categories
+        select: name
+    created_at:
+        label: 'lzaplata.files::lang.file.column.created_at.label'
+        type: datetime
+        sortable: true

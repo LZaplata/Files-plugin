@@ -1,0 +1,14 @@
+title: 'lzaplata.files::lang.category.name'
+modelClass: LZaplata\Files\Models\Category
+list: $/lzaplata/files/models/category/columns.yaml
+recordUrl: 'lzaplata/files/categories/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+showTree: 1
+treeExpanded: 1

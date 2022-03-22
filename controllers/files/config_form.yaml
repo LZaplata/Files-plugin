@@ -1,0 +1,16 @@
+name: Files
+modelClass: LZaplata\Files\Models\File
+form: $/lzaplata/files/models/file/fields.yaml
+defaultRedirect: lzaplata/files/files
+create:
+    title: 'lzaplata.files::lang.file.create.title'
+    redirect: 'lzaplata/files/files/update/:id'
+    redirectClose: lzaplata/files/files
+    flashSave: 'lzaplata.files::lang.file.create.flash'
+update:
+    title: 'lzaplata.files::lang.file.update.title'
+    redirect: lzaplata/files/files
+    redirectClose: lzaplata/files/files
+    flashSave: 'lzaplata.files::lang.file.update.flash.update'
+    flashDelete: 'lzaplata.files::lang.file.update.flash.update'
+preview: {  }

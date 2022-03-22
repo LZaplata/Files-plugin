@@ -1,0 +1,16 @@
+name: Categories
+modelClass: LZaplata\Files\Models\Category
+form: $/lzaplata/files/models/category/fields.yaml
+defaultRedirect: lzaplata/files/categories
+create:
+    title: 'lzaplata.files::lang.category.create.title'
+    redirect: 'lzaplata/files/categories/update/:id'
+    redirectClose: lzaplata/files/categories
+    flashSave: 'lzaplata.files::lang.category.create.flash'
+update:
+    title: 'lzaplata.files::lang.category.update.title'
+    redirect: lzaplata/files/categories
+    redirectClose: lzaplata/files/categories
+    flashSave: 'lzaplata.files::lang.category.update.flash.update'
+    flashDelete: 'lzaplata.files::lang.category.update.flash.delete'
+preview: {  }

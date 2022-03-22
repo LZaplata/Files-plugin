@@ -1,0 +1,27 @@
+fields:
+    name:
+        label: 'lzaplata.files::lang.category.field.name.label'
+        span: left
+        required: 1
+        type: text
+    slug:
+        label: 'lzaplata.files::lang.category.field.slug.label'
+        span: right
+        required: 1
+        preset:
+            field: name
+            type: slug
+        type: text
+    parent:
+        label: 'lzaplata.files::lang.category.field.parent.label'
+        nameFrom: name
+        descriptionFrom: description
+        emptyOption: 'lzaplata.files::lang.category.field.parent.prompt'
+        span: left
+        type: relation
+    files:
+        label: 'lzaplata.files::lang.category.field.files.label'
+        nameFrom: name
+        descriptionFrom: description
+        span: right
+        type: relation

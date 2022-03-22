@@ -1,0 +1,51 @@
+plugin:
+    name: 'lzaplata.files::lang.plugin.name'
+    description: 'lzaplata.files::lang.plugin.description'
+    author: 'Lukáš Záplata'
+    icon: oc-icon-file-o
+    homepage: ''
+permissions:
+    lzaplata.files.default:
+        tab: 'lzaplata.files::lang.plugin.name'
+        label: 'lzaplata.files::lang.privileges.default'
+    lzaplata.files.categories:
+        tab: 'lzaplata.files::lang.plugin.name'
+        label: 'lzaplata.files::lang.privileges.category.default'
+    lzaplata.files.category_create:
+        tab: 'lzaplata.files::lang.plugin.name'
+        label: 'lzaplata.files::lang.privileges.category.create'
+    lzaplata.files.category_delete:
+        tab: 'lzaplata.files::lang.plugin.name'
+        label: 'lzaplata.files::lang.privileges.category.delete'
+    lzaplata.files.category_reorder:
+        tab: 'lzaplata.files::lang.plugin.name'
+        label: 'lzaplata.files::lang.privileges.category.reorder'
+    lzaplata.files.files:
+        tab: 'lzaplata.files::lang.plugin.name'
+        label: 'lzaplata.files::lang.privileges.file.default'
+    lzaplata.files.file_create:
+        tab: 'lzaplata.files::lang.plugin.name'
+        label: 'lzaplata.files::lang.privileges.file.create'
+    lzaplata.files.file_delete:
+        tab: 'lzaplata.files::lang.plugin.name'
+        label: 'lzaplata.files::lang.privileges.file.delete'
+navigation:
+    main-menu-item:
+        label: 'lzaplata.files::lang.plugin.name'
+        url: /
+        icon: icon-file-o
+        permissions:
+            - lzaplata.files.default
+        sideMenu:
+            side-menu-item2:
+                label: 'lzaplata.files::lang.file.name'
+                url: lzaplata/files/files
+                icon: icon-files-o
+                permissions:
+                    - lzaplata.files.files
+            side-menu-item:
+                label: 'lzaplata.files::lang.category.name'
+                url: lzaplata/files/categories
+                icon: icon-sitemap
+                permissions:
+                    - lzaplata.files.categories
