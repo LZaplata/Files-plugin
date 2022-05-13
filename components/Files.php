@@ -39,7 +39,7 @@ class Files extends ComponentBase
      */
     public function getCategoryOptions(): array
     {
-        return Category::orderBy("name", "ASC")->lists("name", "id");
+        return Category::orderBy("name", "ASC")->lists("name", "slug");
     }
 
     /**
@@ -47,6 +47,6 @@ class Files extends ComponentBase
      */
     public function category(): Category
     {
-        return Category::find($this->property("category"));
+        return Category::where("slug", $this->property("category"))->first();
     }
 }

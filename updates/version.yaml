@@ -1,3 +1,5 @@
 1.0.0:
     - 'Create tables'
     - builder_tables_create_lzaplata_files.php
+1.0.1:
+    - 'Change query in component to find category by slug not ID'
