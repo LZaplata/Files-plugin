@@ -1,9 +1,13 @@
-<ul>
-    {% for file in __SELF__.category.files %}
-        <li>
-            <a href="{{ file.file.path }}" target="_blank">
-                {{ file.name }}
-            </a>
-        </li>
-    {% endfor %}
-</ul>
+{% set files = __SELF__.category.files %}
+
+{% if files %}
+    <ul>
+        {% for file in files %}
+            <li>
+                <a href="{{ file.file.path }}" target="_blank">
+                    {{ file.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}

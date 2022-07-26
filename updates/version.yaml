@@ -3,3 +3,6 @@
     - builder_tables_create_lzaplata_files.php
 1.0.1:
     - 'Change query in component to find category by slug not ID'
+1.0.2:
+    - 'Add null as possible return value while getting category in component'
+    - 'Displaying component html only if there is some file'

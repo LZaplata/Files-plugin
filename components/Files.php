@@ -43,9 +43,9 @@ class Files extends ComponentBase
     }
 
     /**
-     * @return Category
+     * @return Category|null
      */
-    public function category(): Category
+    public function category(): ?Category
     {
         return Category::where("slug", $this->property("category"))->first();
     }
