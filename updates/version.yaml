@@ -9,3 +9,5 @@
 1.1.0:
     - 'Add description column to files table'
     - builder_table_update_lzaplata_files_files.php
+1.2.0:
+    - 'Register filesize twig filter for human readable file size'

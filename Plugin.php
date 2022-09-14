@@ -1,5 +1,6 @@
 <?php namespace LZaplata\Files;
 
+use October\Rain\Filesystem\Filesystem;
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
@@ -26,5 +27,21 @@ class Plugin extends PluginBase
 
     public function registerSettings()
     {
+    }
+
+    /**
+     * @return array|void
+     */
+    public function registerMarkupTags()
+    {
+        return [
+            "filters" => [
+                "filesize" => function (int $bytes) {
+                    $filesystem = new Filesystem;
+
+                    return $filesystem->sizeToString($bytes);
+                },
+            ],
+        ];
     }
 }
