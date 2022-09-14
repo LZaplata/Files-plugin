@@ -16,9 +16,14 @@ fields:
         span: right
         required: 1
         type: text
+    description:
+        label: 'lzaplata.files::lang.file.field.description.label'
+        size: small
+        span: auto
+        type: textarea
     categories:
         label: 'lzaplata.files::lang.file.field.categories.label'
         nameFrom: name
         descriptionFrom: description
-        span: left
+        span: right
         type: relation

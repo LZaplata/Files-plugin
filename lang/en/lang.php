@@ -71,6 +71,9 @@
             'name' => [
                 'label' => 'Name',
             ],
+            'description' => [
+                'label' => 'Description',
+            ],
             'categories' => [
                 'label' => 'Categories',
             ],

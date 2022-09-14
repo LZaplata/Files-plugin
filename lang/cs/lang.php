@@ -13,7 +13,7 @@
             ],
             'parent' => [
                 'label' => 'Nadřazená kategorie',
-                'prompt' => '--Žádná--'
+                'prompt' => '--Žádná--',
             ],
             'files' => [
                 'label' => 'Soubory',
@@ -71,6 +71,9 @@
             'name' => [
                 'label' => 'Název',
             ],
+            'description' => [
+                'label' => 'Popis',
+            ],
             'categories' => [
                 'label' => 'Kategorie',
             ],
@@ -113,7 +116,7 @@
             'description' => 'Zobrazí soubory z kategorie',
             'category' => [
                 'title' => 'Kategorie',
-                'description' => 'Vyberte kategorii souborů'
+                'description' => 'Vyberte kategorii souborů',
             ],
         ],
     ],

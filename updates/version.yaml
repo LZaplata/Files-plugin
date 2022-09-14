@@ -6,3 +6,6 @@
 1.0.2:
     - 'Add null as possible return value while getting category in component'
     - 'Displaying component html only if there is some file'
+1.1.0:
+    - 'Add description column to files table'
+    - builder_table_update_lzaplata_files_files.php
