@@ -11,3 +11,5 @@
     - builder_table_update_lzaplata_files_files.php
 1.2.0:
     - 'Register filesize twig filter for human readable file size'
+1.2.1:
+    - 'Support for uploading xlsx and docx files'
