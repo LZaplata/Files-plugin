@@ -2,5 +2,5 @@ scopes:
     categories:
         label: lzaplata.files::lang.filter.categories.label
         modelClass: LZaplata\Files\Models\Category
-        conditions: id in (:filtered)
         nameFrom: name
+        scope: FilterCategories
