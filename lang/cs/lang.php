@@ -118,6 +118,18 @@
                 'title' => 'Kategorie',
                 'description' => 'Vyberte kategorii souborů',
             ],
+            'order' => [
+                'title' => 'Řazení',
+                'description' => 'Vyberte podle čeho se budou soubory řadit',
+                'option' => [
+                    'name_asc' => 'Název (vzestupně)',
+                    'name_desc' => 'Název (sestupně)',
+                    'created_asc' => 'Datum vytvoření (vzestupně)',
+                    'created_desc' => 'Datum vytvoření (sestupně)',
+                    'updated_asc' => 'Datum úpravy (vzestupně)',
+                    'updated_desc' => 'Datum úpravy (sestupně)',
+                ],
+            ],
         ],
     ],
 ];

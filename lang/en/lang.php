@@ -110,4 +110,26 @@
             'label' => 'Categories',
         ],
     ],
+    'component' => [
+        'files' => [
+            'name' => 'Files',
+            'description' => 'Display files from category',
+            'category' => [
+                'title' => 'Category',
+                'description' => 'Choose files category',
+            ],
+            'order' => [
+                'title' => 'Order',
+                'description' => 'Choose files ordering criteria',
+                'option' => [
+                    'name_asc' => 'Name (asceding)',
+                    'name_desc' => 'Name (desceding)',
+                    'created_asc' => 'Created date (asceding)',
+                    'created_desc' => 'Created date (desceding)',
+                    'updated_asc' => 'Edited date (asceding)',
+                    'updated_desc' => 'Edited date (desceding)',
+                ],
+            ],
+        ],
+    ],
 ];
