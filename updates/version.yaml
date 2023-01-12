@@ -17,3 +17,6 @@
     - 'Fix files filtering by categories'
 1.4.0:
     - 'Add files component ordering options'
+1.5.0:
+    - 'Option to enter file position value and order with it'
+    - builder_table_update_lzaplata_files_files_2.php

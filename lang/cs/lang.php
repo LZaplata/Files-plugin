@@ -77,6 +77,9 @@
             'categories' => [
                 'label' => 'Kategorie',
             ],
+            'position' => [
+                'label' => 'Pořadí',
+            ],
         ],
         'column' => [
             'file' => [
@@ -90,6 +93,9 @@
             ],
             'categories' => [
                 'label' => 'Kategorie',
+            ],
+            'position' => [
+                'label' => 'Pořadí',
             ],
         ],
         'name' => 'Soubory',
@@ -128,6 +134,8 @@
                     'created_desc' => 'Datum vytvoření (sestupně)',
                     'updated_asc' => 'Datum úpravy (vzestupně)',
                     'updated_desc' => 'Datum úpravy (sestupně)',
+                    'position_asc' => 'Pořadí (vzestupně)',
+                    'position_desc' => 'Pořadí (sestupně)',
                 ],
             ],
         ],

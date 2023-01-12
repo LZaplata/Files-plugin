@@ -44,8 +44,10 @@ class Files extends ComponentBase
                     "created_at desc"   => "lzaplata.files::lang.component.files.order.option.created_desc",
                     "updated_at asc"    => "lzaplata.files::lang.component.files.order.option.updated_asc",
                     "updated_at desc"   => "lzaplata.files::lang.component.files.order.option.updated_desc",
+                    "position asc"      => "lzaplata.files::lang.component.files.order.option.position_asc",
+                    "position desc"     => "lzaplata.files::lang.component.files.order.option.position_desc",
                 ],
-                "default" => "updated_at desc",
+                "default" => "position asc",
             ],
         ];
     }

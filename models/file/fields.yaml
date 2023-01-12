@@ -27,3 +27,10 @@ fields:
         descriptionFrom: description
         span: right
         type: relation
+    position:
+        label: 'lzaplata.files::lang.file.field.position.label'
+        span: left
+        min: 0
+        step: 10
+        default: 0
+        type: number

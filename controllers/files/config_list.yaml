@@ -7,8 +7,8 @@ recordsPerPage: 20
 showSetup: 1
 showCheckboxes: true
 defaultSort:
-    column: created_at
-    direction: desc
+    column: position
+    direction: asc
 toolbar:
     buttons: list_toolbar
     search:

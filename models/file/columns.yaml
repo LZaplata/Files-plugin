@@ -1,4 +1,8 @@
 columns:
+    position:
+        label: 'lzaplata.files::lang.file.column.position.label'
+        type: number
+        sortable:  true
     file_name:
         label: 'lzaplata.files::lang.file.column.file.label'
         type: text
