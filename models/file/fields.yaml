@@ -2,7 +2,7 @@ fields:
     file:
         label: 'lzaplata.files::lang.file.field.file.label'
         mode: file
-        fileTypes: 'pdf,txt,docx,xlsx,ppt'
+        fileTypes: 'pdf,txt,docx,xlsx,ppt,zip,rar'
         useCaption: true
         thumbOptions:
             mode: crop
