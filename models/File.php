@@ -3,7 +3,6 @@
 use Model;
 use October\Rain\Database\Builder;
 use October\Rain\Database\Scopes\NestedTreeScope;
-use October\Rain\Database\Traits\NestedTree;
 use System\Models\File as SystemFile;
 
 /**
@@ -14,8 +13,6 @@ class File extends Model
     use \October\Rain\Database\Traits\Validation;
 
     use \October\Rain\Database\Traits\SoftDelete;
-
-    use NestedTree;
 
     protected $dates = ['deleted_at'];
 

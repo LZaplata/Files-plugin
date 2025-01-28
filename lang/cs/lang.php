@@ -77,9 +77,6 @@
             'categories' => [
                 'label' => 'Kategorie',
             ],
-            'position' => [
-                'label' => 'Pořadí',
-            ],
         ],
         'column' => [
             'file' => [
@@ -94,9 +91,6 @@
             'categories' => [
                 'label' => 'Kategorie',
             ],
-            'position' => [
-                'label' => 'Pořadí',
-            ],
         ],
         'name' => 'Soubory',
         'create' => [
@@ -109,6 +103,9 @@
                 'update' => 'Soubor byl úspěšně upraven',
                 'delete' => 'Soubor byl úspěšně smazán',
             ],
+        ],
+        'add' => [
+            'title' => 'Přidat soubor',
         ],
     ],
     'filter' => [

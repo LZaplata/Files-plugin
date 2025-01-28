@@ -1,0 +1,16 @@
+files:
+    label: 'lzaplata.files::lang.category.field.files.label'
+    view:
+        list: $/lzaplata/files/models/category/columns_file.yaml
+        toolbarButtons: add|remove
+
+        structure:
+            showReorder: true
+            showTree: false
+            showSorting: false
+    manage:
+        list: $/lzaplata/files/models/category/columns_file.yaml
+    popupSize: adaptive
+    customMessages:
+        buttonAdd: 'lzaplata.files::lang.file.add.title'
+        titleAddForm: 'lzaplata.files::lang.file.add.title'

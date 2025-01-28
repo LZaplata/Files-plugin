@@ -11,12 +11,6 @@ columns:
         type: text
         searchable: true
         sortable: true
-    categories:
-        label: 'lzaplata.files::lang.file.column.categories.label'
-        searchable: true
-        sortable: true
-        relation: categories
-        select: name
     created_at:
         label: 'lzaplata.files::lang.file.column.created_at.label'
         type: datetime

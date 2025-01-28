@@ -2,6 +2,7 @@
 
 use Model;
 use October\Rain\Database\Traits\NestedTree;
+use October\Rain\Database\Traits\SortableRelation;
 
 /**
  * Model
@@ -13,6 +14,7 @@ class Category extends Model
     use \October\Rain\Database\Traits\SoftDelete;
 
     use NestedTree;
+    use SortableRelation;
 
     protected $dates = ['deleted_at'];
 
@@ -38,6 +40,7 @@ class Category extends Model
         "files" => [
             File::class,
             "table" => "lzaplata_files_files_categories",
+            "pivotSortable" => "sort_order",
         ],
         "files_count" => [
             File::class,

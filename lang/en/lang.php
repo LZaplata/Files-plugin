@@ -104,6 +104,9 @@
                 'delete' => 'File has been successfully deleted',
             ],
         ],
+        'add' => [
+            'title' => 'Add file',
+        ],
     ],
     'filter' => [
         'categories' => [

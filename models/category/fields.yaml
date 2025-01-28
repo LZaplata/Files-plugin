@@ -19,9 +19,12 @@ fields:
         emptyOption: 'lzaplata.files::lang.category.field.parent.prompt'
         span: left
         type: relation
+#    files:
+#        label: 'lzaplata.files::lang.category.field.files.label'
+#        nameFrom: name
+#        descriptionFrom: description
+#        span: right
+#        type: relation
     files:
-        label: 'lzaplata.files::lang.category.field.files.label'
-        nameFrom: name
-        descriptionFrom: description
-        span: right
-        type: relation
+        type: partial
+        path: $/lzaplata/files/models/category/_files.htm
