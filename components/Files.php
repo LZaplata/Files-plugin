@@ -7,7 +7,7 @@ namespace LZaplata\Files\Components;
 use Cms\Classes\ComponentBase;
 use LZaplata\Files\Models\Category;
 use LZaplata\Files\Models\File;
-use October\Rain\Database\TreeCollection;
+use October\Rain\Database\Collection;
 
 class Files extends ComponentBase
 {
@@ -31,7 +31,7 @@ class Files extends ComponentBase
             "category" => [
                 "title"         => "lzaplata.files::lang.component.files.category.title",
                 "description"   => "lzaplata.files::lang.component.files.category.description",
-                "type" => "dropdown"
+                "type"          => "dropdown"
             ],
             "order" => [
                 "title"         => "lzaplata.files::lang.component.files.order.title",
@@ -44,10 +44,10 @@ class Files extends ComponentBase
                     "created_at desc"   => "lzaplata.files::lang.component.files.order.option.created_desc",
                     "updated_at asc"    => "lzaplata.files::lang.component.files.order.option.updated_asc",
                     "updated_at desc"   => "lzaplata.files::lang.component.files.order.option.updated_desc",
-                    "position asc"      => "lzaplata.files::lang.component.files.order.option.position_asc",
-                    "position desc"     => "lzaplata.files::lang.component.files.order.option.position_desc",
+                    "sort_order asc"    => "lzaplata.files::lang.component.files.order.option.sort_order_asc",
+                    "sort_order desc"   => "lzaplata.files::lang.component.files.order.option.sort_order_desc",
                 ],
-                "default" => "position asc",
+                "default" => "sort_order asc",
             ],
         ];
     }
@@ -69,14 +69,21 @@ class Files extends ComponentBase
     }
 
     /**
-     * @return TreeCollection|null
+     * @return Collection|null
      */
-    public function files(): ?TreeCollection
+    public function files(): ?Collection
     {
         list($column, $direction) = explode(" ", $this->property("order"));
 
-        return File::whereRelation("categories", "slug", $this->property("category"))
-            ->orderBy($column, $direction)
-            ->get();
+        if ($column == "sort_order") {
+            return Category::with("files")
+                ->where("slug", $this->property("category"))
+                ->first()
+                ->files;
+        } else {
+            return File::whereRelation("categories", "slug", $this->property("category"))
+                ->orderBy($column, $direction)
+                ->get();
+        }
     }
 }

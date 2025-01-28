@@ -25,3 +25,5 @@ v1.5.1:
 v1.6.0:
     - 'Sorting files within a category'
     - sorting_files_within_category.php
+v1.6.1:
+    - 'Files component sorting fix'
