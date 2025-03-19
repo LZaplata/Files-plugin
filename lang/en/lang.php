@@ -135,4 +135,11 @@
             ],
         ],
     ],
+    'menuitem' => [
+        'list_type' => [
+            'file' => [
+                'label' => 'File',
+            ],
+        ],
+    ],
 ];

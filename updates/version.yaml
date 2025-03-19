@@ -27,3 +27,5 @@ v1.6.0:
     - sorting_files_within_category.php
 v1.6.1:
     - 'Files component sorting fix'
+v1.7.0:
+    - 'Support for select file as link in richeditor'

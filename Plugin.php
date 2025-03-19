@@ -1,6 +1,11 @@
 <?php namespace LZaplata\Files;
 
+use Cms\Classes\Theme;
+use Cms\Models\PageLookupItem;
+use LZaplata\Files\Models\File;
 use October\Rain\Filesystem\Filesystem;
+use October\Rain\Support\Facades\Event;
+use RainLab\Pages\Classes\MenuItem;
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
@@ -43,5 +48,29 @@ class Plugin extends PluginBase
                 },
             ],
         ];
+    }
+
+    /**
+     * @return void
+     */
+    public function boot(): void
+    {
+        Event::listen(["cms.pageLookup.listTypes"], function(): array {
+            return [
+                "file" => "lzaplata.files::lang.menuitem.list_type.file.label",
+            ];
+        });
+
+        Event::listen(["cms.pageLookup.getTypeInfo"], function(string $type) {
+            if ($type == "file") {
+                return File::getMenuTypeInfo($type);
+            }
+        });
+
+        Event::listen(["cms.pageLookup.resolveItem"], function(string $type, PageLookupItem $item, string $url, Theme $theme) {
+            if ($type == "file") {
+                return File::resolveMenuItem($item, $url, $theme);
+            }
+        });
     }
 }

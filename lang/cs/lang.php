@@ -137,4 +137,11 @@
             ],
         ],
     ],
+    'menuitem' => [
+        'list_type' => [
+            'file' => [
+                'label' => 'Soubor',
+            ],
+        ],
+    ],
 ];
