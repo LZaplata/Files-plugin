@@ -21,3 +21,7 @@ fields:
         size: small
         span: auto
         type: textarea
+    categories:
+        label: 'lzaplata.files::lang.file.field.categories.label'
+        type: relation
+        span: right

@@ -29,3 +29,5 @@ v1.6.1:
     - 'Files component sorting fix'
 v1.7.0:
     - 'Support for select file as link in richeditor'
+v1.7.1:
+    - 'Add categories in file model'
