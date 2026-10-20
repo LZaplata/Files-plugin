@@ -67,7 +67,7 @@ class Plugin extends PluginBase
             }
         });
 
-        Event::listen(["cms.pageLookup.resolveItem"], function(string $type, PageLookupItem $item, string $url, Theme $theme) {
+        Event::listen(["cms.pageLookup.resolveItem"], function(string $type, PageLookupItem|MenuItem $item, string $url, Theme $theme) {
             if ($type == "file") {
                 return File::resolveMenuItem($item, $url, $theme);
             }

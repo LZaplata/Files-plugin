@@ -76,12 +76,12 @@ class File extends Model
     }
 
     /**
-     * @param PageLookupItem $item
-     * @param string $url
-     * @param Theme $theme
+     * @param  PageLookupItem|MenuItem $item
+     * @param  string $url
+     * @param  Theme $theme
      * @return array|null
      */
-    public static function resolveMenuItem(PageLookupItem $item, string $url, Theme $theme): ?array
+    public static function resolveMenuItem(PageLookupItem|MenuItem $item, string $url, Theme $theme): ?array
     {
         $result = null;
 
