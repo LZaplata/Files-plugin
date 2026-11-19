@@ -41,7 +41,12 @@ class Plugin extends PluginBase
     {
         return [
             "filters" => [
-                "filesize" => function (int $bytes) {
+                "filesize" => function (?int $bytes): string {
+
+                    if ($bytes === null) {
+                        return "";
+                    }
+
                     $filesystem = new Filesystem;
 
                     return $filesystem->sizeToString($bytes);

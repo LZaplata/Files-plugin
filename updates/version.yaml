@@ -33,3 +33,5 @@ v1.7.1:
     - 'Add categories in file model'
 v1.7.2:
     - 'Compatibility with RainLab.Pages MenuItem in resolveItem event'
+v1.7.3:
+    - 'Fix filesize filter for files without size'
